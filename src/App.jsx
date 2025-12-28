@@ -166,14 +166,15 @@ export default function App() {
             transition={{ delay: 0.2, duration: 0.4 }}
             className="hidden md:block"
           >
-            <a href="#contact">
+            
               <Button
                 variant="outline"
                 className="border-purple-500 text-purple-600 hover:bg-purple-50"
               >
+              <a href="#contact">
                 Let's talk
+                </a>
               </Button>
-            </a>
           </motion.div>
         </nav>
       </header>
@@ -213,14 +214,16 @@ export default function App() {
                   View my work
                 </Button>
               </a>
-              <a href="#contact">
+              
                 <Button
                   variant="outline"
                   className="border-purple-300 text-purple-700 hover:bg-purple-50"
                 >
+                <a href="#contact">
                   Contact me
+                  </a>
                 </Button>
-              </a>
+              
             </div>
 
             <div className="flex gap-6 pt-4 text-sm text-slate-500">
@@ -309,15 +312,16 @@ export default function App() {
                     </span>
                   </div>
                   <div className="flex items-center justify-center pt-3 text-sm ">
-                    <a href="https://github.com/bushrohh">
                       <Button
                         size="sm"
                         variant="outline"
                         className="border-slate-200 bg-purple-400 text-purple-700 hover:bg-slate-50"
                       >
+                        <a href="https://github.com/bushrohh">
                         GitHub Profile
+                        </a>
                       </Button>
-                    </a>
+                    
                   </div>
                 </div>
               </div>
@@ -453,24 +457,26 @@ export default function App() {
                     </div>
                   </div>
                   <div className="flex flex-wrap gap-3 text-sm">
-                    <a href={project.liveUrl}>
                       <Button
                         size="sm"
                         variant="outline"
                         className="border-slate-200 text-slate-800 hover:bg-slate-50"
                       >
+                        <a href={project.liveUrl}>
                         View live
+                        </a>
                       </Button>
-                    </a>
-                    <a href={project.githubUrl}>
+                    
+                    
                       <Button
                         size="sm"
                         variant="outline"
                         className="border-slate-200 text-slate-800 hover:bg-slate-50"
-                      >
+                      ><a href={project.githubUrl}>
                         GitHub
+                        </a>
                       </Button>
-                    </a>
+                    
                   </div>
                 </div>
               </motion.article>
