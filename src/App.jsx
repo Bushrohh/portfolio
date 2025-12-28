@@ -179,7 +179,7 @@ export default function App() {
         </nav>
       </header>
 
-      <main className="mx-auto max-w-6xl px-6">
+      <main className="mx-auto max-w-6xl px-6 ">
         <motion.section
           id="home"
           variants={stagger}
@@ -193,15 +193,16 @@ export default function App() {
               Frontend Developer · UI Focused
             </p>
 
-            <h1 className="text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-6xl wrap-break-word max-w-full">
               Building{" "}
-              <span className="bg-linear-to-r from-purple-500 to-purple-700 bg-clip-text text-transparent">
+              <span className="inline-block wrap-break-word bg-linear-to-r from-purple-500 to-purple-700 bg-clip-text text-transparent">
                 clean and bold
               </span>{" "}
+              <br/>
               web experiences.
             </h1>
 
-            <p className="max-w-xl text-base text-slate-600 sm:text-lg">
+            <p className="max-w-xl text-base text-slate-600 sm:text-lg overflow-x-hidden">
               I design and develop modern interfaces with Javascript, React,
               nextJS and a strong focus on clarity, performance, and visual
               impact.
@@ -245,7 +246,7 @@ export default function App() {
           </motion.div>
 
           {/* Right */}
-          <motion.div variants={fadeInUp} className="relative">
+          <motion.div variants={fadeInUp} className="relative overflow-x-hidden">
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
